@@ -9,6 +9,14 @@ using namespace std;
 
 Vecteur::Vecteur(){
 	head = 0;
+	size = 0;
+	if(debug) cout << "Vecteur créé" << endl;
+}
+
+Vecteur::Vecteur(int n){
+	head = new element();
+	head->value = n;
+	head->suiv = 0;
 	if(debug) cout << "Vecteur créé" << endl;
 }
 
@@ -20,6 +28,7 @@ Vecteur::~Vecteur(){
 		head = clone;
 	}
 	head = 0;
+	size = 0;
 	if(debug) cout << "Vecteur détruit" << endl;
 }
 
@@ -64,6 +73,7 @@ void Vecteur::addValueDebut(int value){
 	element* clone = new element();
 	clone->value = value;
 	clone->suiv = head;
+	head = clone;
 	size++;
 }
 

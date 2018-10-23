@@ -16,6 +16,7 @@ class Vecteur {
 		
 	public :
 		Vecteur();
+		Vecteur(int n);
 		~Vecteur();
 		Vecteur(const Vecteur&);
 		
