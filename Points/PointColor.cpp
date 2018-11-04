@@ -1,9 +1,13 @@
 #include "PointColor.h"
 #include <iostream>
 
-PointColor::PointColor() : color(0){}
+using namespace std;
 
-PointColor::PointColor(int x, int y, int _color) : Point(x,y), color(_color){}
+PointColor::PointColor() : Point(0,0), color(0){}
+
+PointColor::PointColor(int x, int y, int color) : Point(x,y){
+	this->color = color;
+}
 
 PointColor::PointColor(PointColor& p){
 	x = p.x;
@@ -12,10 +16,12 @@ PointColor::PointColor(PointColor& p){
 }
 
 PointColor::~PointColor(){
-	cout << "PointColor deleted\n" << endl 
+	cout << "PointColor deleted\n" << endl;
 }
 
-PointColor::PointColor(Point& p, int _color) : Point(p);, color(_color);{}
+PointColor::PointColor(Point& p, int color) : Point(p){
+	this->color = color;
+}
 
 void PointColor::afficher(){
 	Point::afficher();

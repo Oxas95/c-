@@ -3,6 +3,7 @@
 
 #include "Point.h"
 
+
 class PointColor : public Point {
 	
 	private :
@@ -17,6 +18,6 @@ class PointColor : public Point {
 		void afficher();
 		int getColor();
 		Point& getPoint();
-}
+};
 
 #endif
