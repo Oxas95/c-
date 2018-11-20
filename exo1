@@ -1,0 +1,8 @@
+exo1 :
+1) 5 - 1 = 4 puis 3 + 7 = 10   puis 4 + 10 = 14
+2) creer une liste de 2 element contenant 1 et (+ 2 3) qui vaut 5
+3) 1 n'est pas une liste donc c'est faux alors on retourne 7
+4) crée une liste contenant nil puis 3
+
+exo2 :
+1) 
